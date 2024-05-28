@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Integration;
+namespace mrugeshtatvasoft\DataTables\Tests\Integration;
 
 use Carbon\Carbon;
 use Illuminate\Database\Query\Builder;
@@ -8,12 +8,12 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 use PHPUnit\Framework\Attributes\Test;
-use Yajra\DataTables\DataTables;
-use Yajra\DataTables\Facades\DataTables as DatatablesFacade;
-use Yajra\DataTables\QueryDataTable;
-use Yajra\DataTables\Tests\Formatters\DateFormatter;
-use Yajra\DataTables\Tests\Models\User;
-use Yajra\DataTables\Tests\TestCase;
+use mrugeshtatvasoft\DataTables\DataTables;
+use mrugeshtatvasoft\DataTables\Facades\DataTables as DatatablesFacade;
+use mrugeshtatvasoft\DataTables\QueryDataTable;
+use mrugeshtatvasoft\DataTables\Tests\Formatters\DateFormatter;
+use mrugeshtatvasoft\DataTables\Tests\Models\User;
+use mrugeshtatvasoft\DataTables\Tests\TestCase;
 
 class QueryDataTableTest extends TestCase
 {

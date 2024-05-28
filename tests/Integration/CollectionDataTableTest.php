@@ -1,15 +1,15 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Integration;
+namespace mrugeshtatvasoft\DataTables\Tests\Integration;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Http\JsonResponse;
 use PHPUnit\Framework\Attributes\Test;
-use Yajra\DataTables\CollectionDataTable;
-use Yajra\DataTables\DataTables;
-use Yajra\DataTables\Facades\DataTables as DatatablesFacade;
-use Yajra\DataTables\Tests\Models\User;
-use Yajra\DataTables\Tests\TestCase;
+use mrugeshtatvasoft\DataTables\CollectionDataTable;
+use mrugeshtatvasoft\DataTables\DataTables;
+use mrugeshtatvasoft\DataTables\Facades\DataTables as DatatablesFacade;
+use mrugeshtatvasoft\DataTables\Tests\Models\User;
+use mrugeshtatvasoft\DataTables\Tests\TestCase;
 
 class CollectionDataTableTest extends TestCase
 {

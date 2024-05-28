@@ -1,9 +1,9 @@
 <?php
 
-namespace Yajra\DataTables\Processors;
+namespace mrugeshtatvasoft\DataTables\Processors;
 
 use Illuminate\Support\Arr;
-use Yajra\DataTables\Utilities\Helper;
+use mrugeshtatvasoft\DataTables\Utilities\Helper;
 
 class RowProcessor
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace mrugeshtatvasoft\DataTables;
 
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Http\JsonResponse;
@@ -8,10 +8,10 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Illuminate\Support\Traits\Macroable;
 use Psr\Log\LoggerInterface;
-use Yajra\DataTables\Contracts\DataTable;
-use Yajra\DataTables\Contracts\Formatter;
-use Yajra\DataTables\Processors\DataProcessor;
-use Yajra\DataTables\Utilities\Helper;
+use mrugeshtatvasoft\DataTables\Contracts\DataTable;
+use mrugeshtatvasoft\DataTables\Contracts\Formatter;
+use mrugeshtatvasoft\DataTables\Processors\DataProcessor;
+use mrugeshtatvasoft\DataTables\Utilities\Helper;
 
 /**
  * @method static setTransformer($transformer)
@@ -20,7 +20,7 @@ use Yajra\DataTables\Utilities\Helper;
  * @property-read mixed $transformer
  * @property-read mixed $serializer
  *
- * @see https://github.com/yajra/laravel-datatables-fractal for transformer related methods.
+ * @see https://github.com/mrugeshtatvasoft/laravel-datatables-fractal for transformer related methods.
  */
 abstract class DataTableAbstract implements DataTable
 {
@@ -139,7 +139,7 @@ abstract class DataTableAbstract implements DataTable
 
     /**
      * @param  string|array  $columns
-     * @param  string|callable|\Yajra\DataTables\Contracts\Formatter  $formatter
+     * @param  string|callable|\mrugeshtatvasoft\DataTables\Contracts\Formatter  $formatter
      * @return $this
      */
     public function formatColumn($columns, $formatter): static
@@ -798,7 +798,7 @@ abstract class DataTableAbstract implements DataTable
      */
     protected function transform($results, $processed): array
     {
-        if (isset($this->transformer) && class_exists('Yajra\\DataTables\\Transformers\\FractalTransformer')) {
+        if (isset($this->transformer) && class_exists('mrugeshtatvasoft\\DataTables\\Transformers\\FractalTransformer')) {
             return app('datatables.transformer')->transform(
                 $results,
                 $this->transformer,
@@ -878,7 +878,7 @@ abstract class DataTableAbstract implements DataTable
     /**
      * Return an error json response.
      *
-     * @throws \Yajra\DataTables\Exceptions\Exception|\Exception
+     * @throws \mrugeshtatvasoft\DataTables\Exceptions\Exception|\Exception
      */
     protected function errorResponse(\Exception $exception): JsonResponse
     {

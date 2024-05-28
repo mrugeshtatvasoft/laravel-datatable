@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace mrugeshtatvasoft\DataTables;
 
 use Illuminate\Contracts\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Contracts\Database\Query\Builder as QueryBuilder;
@@ -11,7 +11,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
-use Yajra\DataTables\Utilities\Helper;
+use mrugeshtatvasoft\DataTables\Utilities\Helper;
 
 class QueryDataTable extends DataTableAbstract
 {

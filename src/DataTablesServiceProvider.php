@@ -1,11 +1,11 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace mrugeshtatvasoft\DataTables;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
-use Yajra\DataTables\Utilities\Config;
-use Yajra\DataTables\Utilities\Request;
+use mrugeshtatvasoft\DataTables\Utilities\Config;
+use mrugeshtatvasoft\DataTables\Utilities\Request;
 
 class DataTablesServiceProvider extends ServiceProvider
 {

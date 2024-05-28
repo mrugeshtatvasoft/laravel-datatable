@@ -1,12 +1,12 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Integration;
+namespace mrugeshtatvasoft\DataTables\Tests\Integration;
 
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use PHPUnit\Framework\Attributes\Test;
-use Yajra\DataTables\DataTables;
-use Yajra\DataTables\Tests\Models\User;
-use Yajra\DataTables\Tests\TestCase;
+use mrugeshtatvasoft\DataTables\DataTables;
+use mrugeshtatvasoft\DataTables\Tests\Models\User;
+use mrugeshtatvasoft\DataTables\Tests\TestCase;
 
 class IgnoreGettersTest extends TestCase
 {

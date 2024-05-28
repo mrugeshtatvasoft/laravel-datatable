@@ -1,13 +1,13 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace mrugeshtatvasoft\DataTables;
 
 use Illuminate\Contracts\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Contracts\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Traits\Macroable;
-use Yajra\DataTables\Exceptions\Exception;
-use Yajra\DataTables\Utilities\Config;
-use Yajra\DataTables\Utilities\Request;
+use mrugeshtatvasoft\DataTables\Exceptions\Exception;
+use mrugeshtatvasoft\DataTables\Utilities\Config;
+use mrugeshtatvasoft\DataTables\Utilities\Request;
 
 class DataTables
 {
@@ -38,7 +38,7 @@ class DataTables
      * @param  object  $source
      * @return DataTableAbstract
      *
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \mrugeshtatvasoft\DataTables\Exceptions\Exception
      */
     public static function make($source)
     {
@@ -51,7 +51,7 @@ class DataTables
                 $callback = [$engines[$engine], 'create'];
 
                 if (is_callable($callback)) {
-                    /** @var \Yajra\DataTables\DataTableAbstract $instance */
+                    /** @var \mrugeshtatvasoft\DataTables\DataTableAbstract $instance */
                     $instance = call_user_func_array($callback, $args);
 
                     return $instance;
@@ -65,7 +65,7 @@ class DataTables
                 $create = [$engine, 'create'];
 
                 if (is_callable($create)) {
-                    /** @var \Yajra\DataTables\DataTableAbstract $instance */
+                    /** @var \mrugeshtatvasoft\DataTables\DataTableAbstract $instance */
                     $instance = call_user_func_array($create, $args);
 
                     return $instance;
@@ -95,7 +95,7 @@ class DataTables
     /**
      * DataTables using query builder.
      *
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \mrugeshtatvasoft\DataTables\Exceptions\Exception
      */
     public function query(QueryBuilder $builder): QueryDataTable
     {
@@ -110,7 +110,7 @@ class DataTables
     /**
      * DataTables using Eloquent Builder.
      *
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \mrugeshtatvasoft\DataTables\Exceptions\Exception
      */
     public function eloquent(EloquentBuilder $builder): EloquentDataTable
     {
@@ -127,7 +127,7 @@ class DataTables
      *
      * @param  \Illuminate\Support\Collection<array-key, array>|array  $collection
      *
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \mrugeshtatvasoft\DataTables\Exceptions\Exception
      */
     public function collection($collection): CollectionDataTable
     {
@@ -151,7 +151,7 @@ class DataTables
     }
 
     /**
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \mrugeshtatvasoft\DataTables\Exceptions\Exception
      */
     public function validateDataTable(string $engine, string $parent): void
     {

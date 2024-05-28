@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables\Utilities;
+namespace mrugeshtatvasoft\DataTables\Utilities;
 
 use Closure;
 use DateTime;

@@ -1,8 +1,8 @@
 {
-    "name": "yajra/laravel-datatables-oracle",
+    "name": "mrugeshtatvasoft/laravel-datatables-oracle",
     "description": "jQuery DataTables API for Laravel",
     "keywords": [
-        "yajra",
+        "mrugeshtatvasoft",
         "laravel",
         "dataTables",
         "jquery"
@@ -32,15 +32,15 @@
         "rector/rector": "^1.0"
     },
     "suggest": {
-        "yajra/laravel-datatables-export": "Plugin for server-side exporting using livewire and queue worker.",
-        "yajra/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
-        "yajra/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables.",
-        "yajra/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
-        "yajra/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license)."
+        "mrugeshtatvasoft/laravel-datatables-export": "Plugin for server-side exporting using livewire and queue worker.",
+        "mrugeshtatvasoft/laravel-datatables-buttons": "Plugin for server-side exporting of dataTables.",
+        "mrugeshtatvasoft/laravel-datatables-html": "Plugin for server-side HTML builder of dataTables.",
+        "mrugeshtatvasoft/laravel-datatables-fractal": "Plugin for server-side response using Fractal.",
+        "mrugeshtatvasoft/laravel-datatables-editor": "Plugin to use DataTables Editor (requires a license)."
     },
     "autoload": {
         "psr-4": {
-            "Yajra\\DataTables\\": "src/"
+            "mrugeshtatvasoft\\DataTables\\": "src/"
         },
         "files": [
             "src/helper.php"
@@ -48,7 +48,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Yajra\\DataTables\\Tests\\": "tests/"
+            "mrugeshtatvasoft\\DataTables\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -57,10 +57,10 @@
         },
         "laravel": {
             "providers": [
-                "Yajra\\DataTables\\DataTablesServiceProvider"
+                "mrugeshtatvasoft\\DataTables\\DataTablesServiceProvider"
             ],
             "aliases": {
-                "DataTables": "Yajra\\DataTables\\Facades\\DataTables"
+                "DataTables": "mrugeshtatvasoft\\DataTables\\Facades\\DataTables"
             }
         }
     },
@@ -87,7 +87,7 @@
     "funding": [
         {
             "type": "github",
-            "url": "https://github.com/sponsors/yajra"
+            "url": "https://github.com/sponsors/mrugeshtatvasoft"
         }
     ]
 }

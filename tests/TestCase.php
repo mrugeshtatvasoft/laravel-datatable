@@ -1,13 +1,13 @@
 <?php
 
-namespace Yajra\DataTables\Tests;
+namespace mrugeshtatvasoft\DataTables\Tests;
 
 use Illuminate\Database\Schema\Blueprint;
 use Orchestra\Testbench\TestCase as BaseTestCase;
-use Yajra\DataTables\Tests\Models\AnimalUser;
-use Yajra\DataTables\Tests\Models\HumanUser;
-use Yajra\DataTables\Tests\Models\Role;
-use Yajra\DataTables\Tests\Models\User;
+use mrugeshtatvasoft\DataTables\Tests\Models\AnimalUser;
+use mrugeshtatvasoft\DataTables\Tests\Models\HumanUser;
+use mrugeshtatvasoft\DataTables\Tests\Models\Role;
+use mrugeshtatvasoft\DataTables\Tests\Models\User;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -138,14 +138,14 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageProviders($app)
     {
         return [
-            \Yajra\DataTables\DataTablesServiceProvider::class,
+            \mrugeshtatvasoft\DataTables\DataTablesServiceProvider::class,
         ];
     }
 
     protected function getPackageAliases($app)
     {
         return [
-            'DataTables' => \Yajra\DataTables\Facades\DataTables::class,
+            'DataTables' => \mrugeshtatvasoft\DataTables\Facades\DataTables::class,
         ];
     }
 }

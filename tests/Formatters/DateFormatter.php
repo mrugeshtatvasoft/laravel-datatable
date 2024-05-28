@@ -1,10 +1,10 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Formatters;
+namespace mrugeshtatvasoft\DataTables\Tests\Formatters;
 
 use Carbon\Carbon;
 use DateTime;
-use Yajra\DataTables\Contracts\Formatter;
+use mrugeshtatvasoft\DataTables\Contracts\Formatter;
 
 class DateFormatter implements Formatter
 {

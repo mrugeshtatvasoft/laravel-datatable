@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace mrugeshtatvasoft\DataTables;
 
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Unit;
+namespace mrugeshtatvasoft\DataTables\Tests\Unit;
 
 use PHPUnit\Framework\Attributes\Test;
-use Yajra\DataTables\Tests\TestCase;
-use Yajra\DataTables\Utilities\Request;
+use mrugeshtatvasoft\DataTables\Tests\TestCase;
+use mrugeshtatvasoft\DataTables\Utilities\Request;
 
 class RequestTest extends TestCase
 {
@@ -17,7 +17,7 @@ class RequestTest extends TestCase
     }
 
     /**
-     * @return \Yajra\DataTables\Utilities\Request
+     * @return \mrugeshtatvasoft\DataTables\Utilities\Request
      */
     protected function getRequest()
     {

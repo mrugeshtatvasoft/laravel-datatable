@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables;
+namespace mrugeshtatvasoft\DataTables;
 
 use Illuminate\Contracts\Database\Eloquent\Builder as EloquentBuilder;
 use Illuminate\Database\Eloquent\Model;
@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Relations\HasOneOrMany;
 use Illuminate\Database\Eloquent\Relations\HasOneThrough;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use Yajra\DataTables\Exceptions\Exception;
+use mrugeshtatvasoft\DataTables\Exceptions\Exception;
 
 /**
  * @property EloquentBuilder $query
@@ -158,7 +158,7 @@ class EloquentDataTable extends QueryDataTable
      * Resolve the proper column name be used.
      *
      *
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \mrugeshtatvasoft\DataTables\Exceptions\Exception
      */
     protected function resolveRelationColumn(string $column): string
     {
@@ -180,7 +180,7 @@ class EloquentDataTable extends QueryDataTable
      * @param  string  $relationColumn
      * @return string
      *
-     * @throws \Yajra\DataTables\Exceptions\Exception
+     * @throws \mrugeshtatvasoft\DataTables\Exceptions\Exception
      */
     protected function joinEagerLoadedColumn($relation, $relationColumn)
     {

@@ -1,18 +1,18 @@
 <?php
 
-namespace Yajra\DataTables\Tests\Integration;
+namespace mrugeshtatvasoft\DataTables\Tests\Integration;
 
 use Carbon\Carbon;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Http\JsonResponse;
 use PHPUnit\Framework\Attributes\Test;
-use Yajra\DataTables\DataTables;
-use Yajra\DataTables\EloquentDataTable;
-use Yajra\DataTables\Facades\DataTables as DatatablesFacade;
-use Yajra\DataTables\Tests\Formatters\DateFormatter;
-use Yajra\DataTables\Tests\Models\Post;
-use Yajra\DataTables\Tests\Models\User;
-use Yajra\DataTables\Tests\TestCase;
+use mrugeshtatvasoft\DataTables\DataTables;
+use mrugeshtatvasoft\DataTables\EloquentDataTable;
+use mrugeshtatvasoft\DataTables\Facades\DataTables as DatatablesFacade;
+use mrugeshtatvasoft\DataTables\Tests\Formatters\DateFormatter;
+use mrugeshtatvasoft\DataTables\Tests\Models\Post;
+use mrugeshtatvasoft\DataTables\Tests\Models\User;
+use mrugeshtatvasoft\DataTables\Tests\TestCase;
 
 class EloquentDataTableTest extends TestCase
 {

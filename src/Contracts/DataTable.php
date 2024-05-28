@@ -1,6 +1,6 @@
 <?php
 
-namespace Yajra\DataTables\Contracts;
+namespace mrugeshtatvasoft\DataTables\Contracts;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Collection;

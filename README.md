@@ -1,21 +1,21 @@
 # jQuery DataTables API for Laravel
 
-[![Join the chat at https://gitter.im/yajra/laravel-datatables](https://badges.gitter.im/yajra/laravel-datatables.svg)](https://gitter.im/yajra/laravel-datatables?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/yajra)
+[![Join the chat at https://gitter.im/mrugeshtatvasoft/laravel-datatables](https://badges.gitter.im/mrugeshtatvasoft/laravel-datatables.svg)](https://gitter.im/mrugeshtatvasoft/laravel-datatables?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/mrugeshtatvasoft)
 [![Donate](https://img.shields.io/badge/donate-patreon-blue.svg)](https://www.patreon.com/bePatron?u=4521203)
 
 [![Laravel 4.2|5.x|6|7|8|9|10|11](https://img.shields.io/badge/Laravel-4.2|5.x|6|7|8|9|10|11-orange.svg)](http://laravel.com)
-[![Latest Stable Version](https://img.shields.io/packagist/v/yajra/laravel-datatables-oracle.svg)](https://packagist.org/packages/yajra/laravel-datatables-oracle)
-[![Continuous Integration](https://github.com/yajra/laravel-datatables/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/yajra/laravel-datatables/actions/workflows/continuous-integration.yml)
-[![Static Analysis](https://github.com/yajra/laravel-datatables/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/yajra/laravel-datatables/actions/workflows/static-analysis.yml)
+[![Latest Stable Version](https://img.shields.io/packagist/v/mrugeshtatvasoft/laravel-datatables-oracle.svg)](https://packagist.org/packages/mrugeshtatvasoft/laravel-datatables-oracle)
+[![Continuous Integration](https://github.com/mrugeshtatvasoft/laravel-datatables/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/mrugeshtatvasoft/laravel-datatables/actions/workflows/continuous-integration.yml)
+[![Static Analysis](https://github.com/mrugeshtatvasoft/laravel-datatables/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/mrugeshtatvasoft/laravel-datatables/actions/workflows/static-analysis.yml)
 
-[![Total Downloads](https://poser.pugx.org/yajra/laravel-datatables-oracle/downloads.png)](https://packagist.org/packages/yajra/laravel-datatables-oracle)
-[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages/yajra/laravel-datatables-oracle)
+[![Total Downloads](https://poser.pugx.org/mrugeshtatvasoft/laravel-datatables-oracle/downloads.png)](https://packagist.org/packages/mrugeshtatvasoft/laravel-datatables-oracle)
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://packagist.org/packages/mrugeshtatvasoft/laravel-datatables-oracle)
 
 Laravel package for handling [server-side](https://www.datatables.net/manual/server-side) works of [DataTables](http://datatables.net) jQuery Plugin via [AJAX option](https://datatables.net/reference/option/ajax) by using Eloquent ORM, Fluent Query Builder or Collection.
 
 ```php
-use Yajra\DataTables\Facades\DataTables;
+use mrugeshtatvasoft\DataTables\Facades\DataTables;
 
 return DataTables::eloquent(User::query())->toJson();
 return DataTables::query(DB::table('users'))->toJson();
@@ -49,9 +49,9 @@ return DataTables::make(User::all())->toJson();
 
 ## Documentations
 
-- [Github Docs](https://github.com/yajra/laravel-datatables-docs)
-- [Laravel DataTables Quick Starter](https://yajrabox.com/docs/laravel-datatables/master/quick-starter)
-- [Laravel DataTables Documentation](https://yajrabox.com/docs/laravel-datatables)
+- [Github Docs](https://github.com/mrugeshtatvasoft/laravel-datatables-docs)
+- [Laravel DataTables Quick Starter](https://mrugeshtatvasoftbox.com/docs/laravel-datatables/master/quick-starter)
+- [Laravel DataTables Documentation](https://mrugeshtatvasoftbox.com/docs/laravel-datatables)
 
 ## Laravel Version Compatibility
 
@@ -77,7 +77,7 @@ return DataTables::make(User::all())->toJson();
 ## Quick Installation
 
 ```bash
-composer require yajra/laravel-datatables-oracle:"^11"
+composer require mrugeshtatvasoft/laravel-datatables-oracle:"^11"
 ```
 
 #### Service Provider & Facade (Optional on Laravel 5.5+)
@@ -86,19 +86,19 @@ Register provider and facade on your `config/app.php` file.
 ```php
 'providers' => [
     ...,
-    Yajra\DataTables\DataTablesServiceProvider::class,
+    mrugeshtatvasoft\DataTables\DataTablesServiceProvider::class,
 ]
 
 'aliases' => [
     ...,
-    'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+    'DataTables' => mrugeshtatvasoft\DataTables\Facades\DataTables::class,
 ]
 ```
 
 #### Configuration (Optional)
 
 ```bash
-php artisan vendor:publish --provider="Yajra\DataTables\DataTablesServiceProvider"
+php artisan vendor:publish --provider="mrugeshtatvasoft\DataTables\DataTablesServiceProvider"
 ```
 
 And that's it! Start building out some awesome DataTables!
@@ -118,7 +118,7 @@ It is advised to use [Homestead](https://laravel.com/docs/5.4/homestead) or [Val
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/yajra/laravel-datatables/blob/master/.github/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/mrugeshtatvasoft/laravel-datatables/blob/master/.github/CONTRIBUTING.md) for details.
 
 ## Security
 
@@ -126,10 +126,10 @@ If you discover any security related issues, please email [aqangeles@gmail.com](
 
 ## Credits
 
-- [Arjay Angeles](https://github.com/yajra)
+- [Arjay Angeles](https://github.com/mrugeshtatvasoft)
 - [bllim/laravel4-datatables-package](https://github.com/bllim/laravel4-datatables-package)
-- [All Contributors](https://github.com/yajra/laravel-datatables/graphs/contributors)
+- [All Contributors](https://github.com/mrugeshtatvasoft/laravel-datatables/graphs/contributors)
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/yajra/laravel-datatables/blob/master/LICENSE.md) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/mrugeshtatvasoft/laravel-datatables/blob/master/LICENSE.md) for more information.
